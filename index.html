@@ -1,128 +1,218 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People's Advocates for Total Health LLC | Holistic Wellness & Community Health Advocacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Instrument+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #faf5f0; color: #2c1e1a; font-family: 'Instrument Sans', sans-serif; overflow-x: hidden; }
+        .font-serif-warm { font-family: 'Fraunces', serif; }
+        
+        /* Warm Humanist Palette */
+        .text-terracotta { color: #e07a5f; }
+        .bg-terracotta { background-color: #e07a5f; }
+        .border-terracotta { border-color: #e07a5f; }
+        .bg-cream-soft { background-color: #f4ece4; }
+        
+        /* Deep Editorial Scroll Animations without boxes */
+        .reveal { transition: opacity 1.5s cubic-bezier(0.215, 0.610, 0.355, 1), transform 1.5s cubic-bezier(0.215, 0.610, 0.355, 1); opacity: 0; transform: translateY(50px); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Elegant Smooth Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #faf5f0; }
+        ::-webkit-scrollbar-thumb { background: #e07a5f; border-radius: 20px; }
+
+        .organic-link {
+            position: relative;
+        }
+        .organic-link::after {
+            content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1.5px; background-color: #e07a5f;
+            transition: width 0.35s ease;
+        }
+        .organic-link:hover::after { width: 100%; }
+    </style>
 </head>
-<body>
+<body class="antialiased">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <!-- Fluid Organic Navigation Menu -->
+    <nav class="fixed w-full z-50 py-6 px-6 md:px-16 bg-[#faf5f0]/80 backdrop-blur-xl border-b border-orange-100/40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-serif-warm text-xl md:text-2xl font-semibold tracking-tight text-[#2c1e1a]">
+                PEOPLE'S <span class="text-terracotta italic font-light">Advocates</span>
+            </div>
+            <div class="hidden lg:flex items-center space-x-12 text-xs font-semibold tracking-wider text-[#4a3b32] uppercase">
+                <a href="#advocacy-mission" class="organic-link hover:text-terracotta transition">01 / Mission</a>
+                <a href="#total-wellness" class="organic-link hover:text-terracotta transition">02 / Ecosystem</a>
+                <a href="#curated-method" class="organic-link hover:text-terracotta transition">03 / Principles</a>
+                <a href="#intake-terminal" class="bg-terracotta text-white px-7 py-3 rounded-full hover:bg-[#2c1e1a] transition shadow-lg shadow-orange-950/10 font-sans tracking-normal normal-case text-xs font-bold">Connect With Us</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Stage 1: The Humanist Spatial Opening (Hero) -->
+    <section class="min-h-screen flex items-center relative px-6 md:px-16 overflow-hidden">
+        <!-- Soft Ambient Light Background Blobs -->
+        <div class="absolute top-10 right-0 w-[30rem] h-[30rem] bg-orange-200/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-10 left-0 w-[25rem] h-[25rem] bg-amber-100/30 rounded-full blur-[100px]"></div>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center w-full z-10 pt-24">
+            <div class="lg:col-span-6">
+                <span class="text-terracotta font-semibold tracking-widest text-xs uppercase mb-4 block">Holistic Human Care</span>
+                <h1 class="font-serif-warm text-5xl md:text-7xl font-normal text-[#2c1e1a] leading-[1.1] tracking-tight mb-8">
+                    Advocating for <br>your total <br><span class="italic font-light text-stone-500">health balance.</span>
+                </h1>
+                <p class="text-[#5c4a42] text-sm md:text-base max-w-lg leading-relaxed mb-12 font-light">
+                    People's Advocates for Total Health LLC structuralizes custom guidance systems to uplift physical vitality, preventive strategies, and mental resilience across communities.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#total-wellness" class="bg-[#2c1e1a] text-white font-medium text-xs tracking-wider uppercase px-8 py-4 rounded-full hover:bg-terracotta transition shadow-xl text-center font-bold">Discover Ecosystem</a>
+                    <a href="tel:15307479476" class="text-[#2c1e1a] font-medium text-xs border border-orange-200/60 bg-white/50 backdrop-blur-sm px-8 py-4 rounded-full hover:border-terracotta hover:text-terracotta transition text-center flex items-center justify-center gap-2 shadow-sm font-bold">
+                        +1 (530) 747-9476
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Warm Organic Photography -->
+            <div class="lg:col-span-6 relative h-[45vh] lg:h-[70vh] w-full rounded-[2.5rem] overflow-hidden shadow-2xl shadow-orange-950/5">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover filter contrast-[1.01] sepia-[0.05]" alt="Holistic Wellness Advocacy Mental Health and Yoga Harmony">
+                <div class="absolute inset-0 bg-gradient-to-t from-orange-950/20 to-transparent"></div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <!-- Stage 2: Validated Foundation & Identity Text (Deep Scroll 1) -->
+    <section id="advocacy-mission" class="py-44 px-6 md:px-16 bg-cream-soft/50 border-y border-orange-100/40 relative">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <span class="text-terracotta font-semibold tracking-widest text-xs uppercase block mb-4">ESTABLISHED DIRECTIVE</span>
+            <div class="w-8 h-[1px] bg-terracotta mx-auto mb-8"></div>
+            <p class="font-serif-warm text-xl md:text-3xl font-light text-[#2c1e1a] leading-relaxed mb-10">
+                "As documented in the official corporate registration records of **image_005cec.jpg**, People's Advocates for Total Health LLC is structurally positioned as an advisory entity for human wellness optimization."
+            </p>
+            <p class="text-[#5c4a42] text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-light">
+                Under the administrative leadership of key principal **Jason Alexander**, our advocacy platform translates health parameters into sustainable lifestyles, managed directly from our sovereign community headquarters:
+                <span class="block text-[#2c1e1a] font-bold font-serif-warm italic text-lg mt-4 tracking-normal normal-case">2355 State St Ste 101, Salem, OR, 97301-4541, United States</span>
+            </p>
+        </div>
+    </section>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+    <!-- Stage 3: The Wellness Ecosystem Matrix (Deep Scroll 2) -->
+    <section id="total-wellness" class="py-48 px-6 md:px-16 bg-[#faf5f0]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 text-left reveal max-w-xl">
+                <span class="text-terracotta font-semibold uppercase tracking-widest text-xs block mb-2">Advocacy Modalities</span>
+                <h2 class="font-serif-warm text-3xl md:text-5xl font-normal text-[#2c1e1a] tracking-tight">Our Health Focus Nodes</h2>
+                <p class="text-[#7a685e] text-sm mt-4 font-light">We integrate custom mental, physical, and cellular guidance arrays to form a blanket of total health longevity.</p>
+            </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+            <!-- Beautiful Alternating Continuous Grid - Zero Box Contours -->
+            <div class="space-y-48">
+                <!-- Modality 1 -->
+                <div class="grid lg:grid-cols-12 gap-16 items-center reveal">
+                    <div class="lg:col-span-7 h-96 w-full overflow-hidden rounded-[2rem] shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover filter brightness-[0.98]" alt="Holistic Wellness Advocacy Meditation Mind Balance">
+                    </div>
+                    <div class="lg:col-span-5">
+                        <span class="text-terracotta font-serif-warm italic text-sm block mb-2">Ecosystem Pillar 01</span>
+                        <h3 class="text-2xl font-bold text-[#2c1e1a] mb-4 tracking-tight">Mental & Neurological Harmony</h3>
+                        <p class="text-[#5c4a42] text-sm leading-relaxed font-light">Stress alleviation frameworks and cognitive behavioral habit alignment models mapped out to establish calm baselines for high-performance lifestyles.</p>
+                    </div>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+                <!-- Modality 2 -->
+                <div class="grid lg:grid-cols-12 gap-16 items-center reveal lg:flex-row-reverse">
+                    <div class="lg:order-last lg:col-span-7 h-96 w-full overflow-hidden rounded-[2rem] shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Nutritional Cellular Total Health Balanced Green Diet">
+                    </div>
+                    <div class="lg:col-span-5">
+                        <span class="text-terracotta font-serif-warm italic text-sm block mb-2">Ecosystem Pillar 02</span>
+                        <h3 class="text-2xl font-bold text-[#2c1e1a] mb-4 tracking-tight">Nutritional & Cellular Vitality</h3>
+                        <p class="text-[#5c4a42] text-sm leading-relaxed font-light">Designing personalized organic nutrient integration profiles to boost immunity reserves, maximize metabolic efficiency, and minimize internal inflammatory vectors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Stage 4: Monolithic Humanist Philosophy (Deep Scroll 3) -->
+    <section class="py-40 bg-[#2c1e1a] text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-orange-950/10 to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 reveal">
+            <span class="text-terracotta font-semibold tracking-widest text-xs uppercase block mb-4">Core Philosophy</span>
+            <h3 class="font-serif-warm text-2xl md:text-4xl text-[#f4ece4] font-light leading-relaxed">
+                "Health is not merely the absence of disease, but the absolute abundance of life, clarity, and adaptive human strength."
+            </h3>
+        </div>
+    </section>
+
+    <!-- Stage 5: Structural Health Strategy Timeline (Deep Scroll 4) -->
+    <section id="curated-method" class="py-44 px-6 md:px-16 bg-cream-soft/30">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <span class="text-terracotta font-semibold tracking-widest text-xs block mb-3 uppercase">// STEWARDSHIP PROTOCOL</span>
+            <h2 class="font-serif-warm text-3xl md:text-4xl font-normal text-[#2c1e1a]">HOW WE ADVOCATE</h2>
+            <div class="space-y-12 text-left mt-20 max-w-2xl mx-auto">
+                <div class="border-b border-orange-200/30 pb-6">
+                    <h4 class="font-serif-warm italic text-lg text-terracotta mb-2">01 / Biological Bio-Mapping</h4>
+                    <p class="text-[#5c4a42] text-xs leading-relaxed font-light">We interpret current lifestyle bottlenecks, stress signatures, and environmental triggers to construct your baseline matrix.</p>
+                </div>
+                <div class="border-b border-orange-200/30 pb-6">
+                    <h4 class="font-serif-warm italic text-lg text-[#2c1e1a] mb-2">02 / Customized Habit Blueprint</h4>
+                    <p class="text-[#5c4a42] text-xs leading-relaxed font-light">Replacing inflammatory behavioral routines with functional nutrition, dynamic kinetic tracking, and mindfulness checkpoints.</p>
+                </div>
+                <div>
+                    <h4 class="font-serif-warm italic text-lg text-[#2c1e1a] mb-2">03 / Continuous Advocacy Support</h4>
+                    <p class="text-[#5c4a42] text-xs leading-relaxed font-light">Ongoing structural consultation to recalibrate systems as body mechanics and community environments continuously evolve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stage 6: Typographic Connection Interface Footer (Deep Scroll 5) -->
+    <footer id="intake-terminal" class="py-28 px-6 md:px-16 bg-white border-t border-orange-100/50 relative z-10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-end">
+            <div class="lg:col-span-7">
+                <span class="text-terracotta font-semibold tracking-widest text-xs uppercase block mb-4">Intake Integration Gateway</span>
+                <h2 class="font-serif-warm text-3xl md:text-5xl font-normal text-[#2c1e1a] mb-12 tracking-tight">Initiate your advocacy consultation.</h2>
+                
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-stone-400 text-[10px] tracking-widest block uppercase font-medium mb-1">Secure Core Mailbox</span>
+                        <a href="mailto:contact@peoplesadvocates.org" class="text-xl md:text-2xl font-bold font-serif-warm italic text-[#2c1e1a] hover:text-terracotta transition break-all">contact@peoplesadvocates.org</a>
+                    </div>
+                    <div>
+                        <span class="text-stone-400 text-[10px] tracking-widest block uppercase font-medium mb-1">Direct Telephony Access</span>
+                        <a href="tel:15307479476" class="text-xl md:text-2xl font-bold font-serif-warm italic text-[#2c1e1a] hover:text-terracotta transition">+1 (530) 747-9476</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 lg:text-right mt-12 lg:mt-0">
+                <span class="text-stone-400 text-[10px] tracking-widest block uppercase font-medium mb-2">HQ Physical Station</span>
+                <p class="font-serif-warm text-lg text-[#5c4a42] leading-relaxed italic">
+                    2355 State St Ste 101<br>
+                    Salem, OR, 97301-4541<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-24 pt-6 border-t border-orange-100/60 flex flex-col md:flex-row justify-between text-[10px] text-stone-400 uppercase tracking-widest">
+            <p>&copy; 2026 PEOPLE'S ADVOCATES FOR TOTAL HEALTH LLC. ALL RIGHTS ARCHIVED.</p>
+            <p>SALEM COORDINATES // OREGON, USA</p>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script for Smooth Fluid Transitions -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
